@@ -1,1 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ebook Cover Preview — Belajar Microsoft Excel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green-700:#157A4A;
+      --green-500:#2fa36a;
+      --muted:#6b7280;
+      --bg:#f7faf9;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
 
+    .cover {width:900px;max-width:96vw;background:#fff;box-shadow:0 12px 40px rgba(12,18,31,0.12);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 540px}
+
+    /* Left strip (thumbnail style) */
+    .cover--left{padding:40px 44px;display:flex;flex-direction:column;justify-content:center;gap:18px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfd 100%)}
+    .eyebrow{font-size:14px;color:var(--muted);}
+    .title-large{font-size:48px;line-height:1.02;color:var(--green-700);font-weight:800;margin:0}
+    .subtitle{font-size:18px;color:#263238;margin-top:6px}
+    .desc{color:#39404a;margin-top:14px;line-height:1.6}
+
+    /* Right big cover */
+    .cover--right{background:linear-gradient(180deg,#ffffff 0%,#f7fbfc 100%);padding:48px 56px;position:relative}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--green-500),var(--green-700));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+    .meta-top{position:absolute;right:56px;top:40px;color:var(--muted);font-size:16px}
+    .main-title{font-size:44px;line-height:1.02;color:var(--green-700);font-weight:800;margin-top:6px}
+    .main-sub{font-size:20px;color:#334155;margin-top:8px}
+
+    .hero-illustration{display:flex;gap:28px;align-items:center;margin-top:26px}
+    .laptop{width:320px;height:200px;border-radius:10px;background:linear-gradient(180deg,#edf7ef,#ffffff);box-shadow:0 8px 22px rgba(21,122,74,0.08);border:6px solid #e6f3ea;display:flex;align-items:center;justify-content:center}
+    .chart-icon{font-size:56px;color:var(--green-600)}
+
+    .author{margin-top:28px;font-weight:700;font-size:20px;color:#0f1724}
+    .author-sub{color:var(--muted);margin-top:6px}
+
+    /* diagonal green wedge
+    .wedge{position:absolute;right:-120px;bottom:-120px;width:520px;height:520px;background:linear-gradient(135deg,var(--green-500),#0e7c49);transform:rotate(-18deg);border-radius:6px}
+    .wedge::after{content:'';position:absolute;inset:20px;background:linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));} */
+
+    /* small-screen adjustments */
+    @media (max-width:980px){
+      .cover{grid-template-columns:1fr;}
+      .cover--left{padding:28px}
+      .cover--right{padding:30px}
+      .wedge{display:none}
+      .title-large{font-size:36px}
+      .main-title{font-size:32px}
+      .hero-illustration{flex-direction:column;align-items:flex-start}
+    }
+
+    /* utility */
+    .muted{color:var(--muted)}
+
+    /* button */
+    .cta-outline{
+        display:inline-block;
+        padding:10px 16px;
+        border-radius:10px;
+        border:2px solid #2fa36a;
+        color:#0e7c49;
+        text-decoration:none;
+        font-weight:600;
+        transition:background .12s ease, color .12s ease, transform .12s ease;
+        }
+    .cta-outline:hover,
+    .cta-outline:focus{
+        background:#ecf8f0;
+        transform:translateY(-2px);
+    }
+    .cta-outline:focus-visible{outline:3px solid rgba(47,163,106,0.14)}
+  </style>
+</head>
+<body>
+  <div class="cover" role="main">
+    <div class="cover--left">
+      <div class="eyebrow">Panduan Praktis</div>
+      <h1 class="title-large">Belajar Microsoft Excel<br>untuk Pemula</h1>
+      <div class="subtitle">Panduan Praktis Menguasai Dasar Excel dengan Contoh dan Latihan</div>
+      <p class="desc">eBook ini dirancang untuk membantu pemula belajar menggunakan Excel secara efektif. Contoh-contoh dan latihan disertakan agar kamu bisa langsung mempraktikkannya.</p>
+      <a class="cta-outline" href="https://lynk.id/ebook-bermanfaat/xj41v5v1z412" target="_blank" rel="noopener noreferrer" aria-label="Buka Ebook Belajar Microsoft Excel">
+        Lihat eBook
+      </a>
+
+    </div>
+
+    <div class="cover--right">
+      <div style="display:flex;gap:18px;align-items:center">
+        <div class="logo">X</div>
+        <div style="flex:1">
+          <div class="meta-top">Edisi 2025<br><span class="muted">Versi Pembelajaran</span></div>
+        </div>
+      </div>
+
+      <h2 class="main-title">Belajar Microsoft Excel untuk Pemula</h2>
+      <div class="main-sub">Panduan Praktis Menguasai Dasar Excel dengan Contoh dan Latihan</div>
+
+      <div class="hero-illustration">
+        
+        <div class="laptop" aria-hidden="true">
+          <!-- simple table / chart inside laptop -->
+          <svg width="240" height="130" viewBox="0 0 240 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="laptop-screen">
+            <rect x="0" y="0" width="240" height="130" rx="6" fill="#fff" />
+            <rect x="10" y="12" width="220" height="18" rx="4" fill="#e6f3ea" />
+            <rect x="10" y="36" width="180" height="78" rx="4" fill="#fbfdfb" />
+            <!-- fake grid -->
+            <g fill="none" stroke="#e1efe0" stroke-width="1">
+              <path d="M18 44h160M18 60h160M18 76h160M18 92h160M18 108h160" />
+            </g>
+            <!-- chart -->
+            <rect x="160" y="76" width="12" height="38" fill="#2fa36a" rx="2" />
+            <rect x="142" y="58" width="12" height="56" fill="#23a04f" rx="2" />
+            <rect x="124" y="44" width="12" height="70" fill="#0e7c49" rx="2" />
+          </svg>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:56px;color:var(--green-500);line-height:1">📈</div>
+          <div style="font-size:36px;color:#93cfa2;opacity:0.95">fx</div>
+        </div>
+      </div>
+
+      <div class="author">Oleh: Triyas Hevianto Saputro</div>
+      <div class="author-sub">S1 Teknik Elektro — S2 Teknologi Informasi<br>Universitas Teknologi Yogyakarta</div>
+
+      <div class="wedge" aria-hidden="true"></div>
+    </div>
+  </div>
+</body>
+</html>
